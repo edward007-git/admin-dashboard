@@ -1,3 +1,4 @@
+import Header from './Components/Layout/Header'
 import Sidebar from './Components/Layout/Sidebar'
 import React from 'react'
 
@@ -10,6 +11,9 @@ const App = () => {
      
      <div className='flex h-screen overflow-hidden'>
        <Sidebar />
+       <div className='flex-1 flex flex-col overflow-hidden'>
+       <Header />
+       </div>
      </div>
     </div>
   )
