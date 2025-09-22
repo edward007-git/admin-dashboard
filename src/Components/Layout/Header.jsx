@@ -61,7 +61,7 @@ const Header = () => {
             <button className='realative p-2.5 rounded-lg text-slate-600 dark:text-slate-300
             hover:bg-slate-100 dark:hover:bg-slate-800  transition-colors'>
                  <Bell className='w-5 h-5'/>
-                 <span classsName='absolute -top-1 w-8 h-5 bg-red-500 text-white text-xs
+                 <span classsName='absolute -top-1 w-5 h-5 bg-red-500 text-white text-xs
                  rounde-full flex items-center justify-center'>3</span>
 
 
