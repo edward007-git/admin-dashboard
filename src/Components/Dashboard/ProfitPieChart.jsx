@@ -33,7 +33,7 @@ function ProfitPieChart() {
               label={({ name, percent }) =>
                 `${name} ${(percent * 100).toFixed(0)}%`
               }
-              outerRadius={95}
+              outerRadius={80}
            
               dataKey="value"
             >
