@@ -1,11 +1,10 @@
-import { Filter, Menu, Plus, Search, Sun, Bell, Settings, ChevronDown } from 'lucide-react'
-import React from 'react'
+import { Filter, Menu, Plus, Search, Sun, Bell, Settings, ChevronDown } from "lucide-react";
+import React from "react";
 
-const Header = ({onToggle}) => {
+const Header = ({ onToggle }) => {
   return (
-    <div className="bg-white text-slate-800 border-b border-slate-200 px-4 sm:px-6 py-4 backdrop-blur-xl">
-      <div className="flex items-center justify-between">
-
+    <div className="bg-white text-slate-800 border-b border-slate-200 px-3 sm:px-6 py-3 sm:py-4 backdrop-blur-xl">
+      <div className="flex items-center justify-between gap-3 flex-wrap md:flex-nowrap">
         {/* Left side */}
         <div className="flex items-center space-x-4">
           <button
@@ -16,9 +15,7 @@ const Header = ({onToggle}) => {
           </button>
 
           <div className="hidden md:block">
-            <h1 className="text-2xl font-semibold text-slate-800">
-              Dashboard
-            </h1>
+            <h1 className="text-2xl font-semibold text-slate-800">Dashboard</h1>
             <p className="text-sm text-slate-500">
               Welcome back, Steven! Here's what's happening today
             </p>
@@ -26,9 +23,8 @@ const Header = ({onToggle}) => {
         </div>
 
         {/* Center - Search */}
-        <div className="flex-1 max-w-lg sm:max-w-md mx-4 sm:mx-8">
+        <div className="flex-1 w-full md:max-w-lg md:w-auto mx-0 md:mx-4 sm:mx-8 order-3 md:order-none mt-2 md:mt-0">
           <div className="relative">
-
             <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" />
 
             <input
@@ -44,14 +40,13 @@ const Header = ({onToggle}) => {
               className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 
               text-slate-500 hover:bg-slate-100 rounded hidden sm:block"
             >
-              <Filter />
+              <Filter className="w-4 h-4" />
             </button>
           </div>
         </div>
 
         {/* Right side */}
-        <div className="flex items-center space-x-3">
-
+        <div className="flex items-center space-x-3 ml-auto">
           {/* New button */}
           <div
             className="hidden lg:flex items-center space-x-2 py-2 px-4 
@@ -92,12 +87,8 @@ const Header = ({onToggle}) => {
             />
 
             <div className="hidden md:block">
-              <p className="text-sm font-medium text-slate-800">
-                steven mark
-              </p>
-              <p className="text-xs text-slate-500">
-                Admin
-              </p>
+              <p className="text-sm font-medium text-slate-800">steven mark</p>
+              <p className="text-xs text-slate-500">Admin</p>
             </div>
 
             <ChevronDown className="w-4 h-4 text-slate-400" />
@@ -105,7 +96,7 @@ const Header = ({onToggle}) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
