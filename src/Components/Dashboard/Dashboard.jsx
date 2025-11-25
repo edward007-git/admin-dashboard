@@ -2,6 +2,7 @@ import React from 'react'
 import StaticGrid from './StaticGrid'
 import ChartSection from './ChartSection'
 
+
 const Dashboard = () => {
   return (
     <div className='space-y-6'>
@@ -9,7 +10,7 @@ const Dashboard = () => {
         <StaticGrid /> 
         {/*chart section component */}
         <ChartSection />
-
+        
 
 
 
