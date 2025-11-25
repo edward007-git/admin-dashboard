@@ -52,7 +52,7 @@ function RevenueChart() {
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             data={data}
-            margin={{ top: 10, right: 16, left: -20, bottom: 0 }}
+            margin={{ top: 10, right: 16, left: 0, bottom:20 }}
           >
             <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
             <XAxis
@@ -75,7 +75,11 @@ function RevenueChart() {
               }}
               labelStyle={{ color: "#e2e8f0", fontSize: 12 }}
             />
-            <Legend verticalAlign="top" height={24} />
+   < Legend
+      verticalAlign="bottom"
+     align="center"
+    wrapperStyle={{ fontSize: "12px", marginTop: "8px" }}
+    />
 
             <Line
               type="monotone"
