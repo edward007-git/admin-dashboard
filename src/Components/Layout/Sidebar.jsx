@@ -171,12 +171,14 @@ function Sidebar({ collapsed, onToggle, currentPage, onPageChange }) {
   return (
     <div
       className={`${
-        collapsed ? "w-20" : "w-72"
+        collapsed ? 
+         "w-16 md:w-20"   
+          : "w-56 md:w-72"
       } transition duration-300 ease-in-out 
       bg-white text-slate-700 border-r border-slate-200 flex flex-col relative z-10`}
     >
       {/* Logo */}
-      <div className="p-6 border-b border-slate-200">
+      <div className="p-4 md:p-6 border-b border-slate-200">
         <div className="flex items-center space-x-3">
           <button
             className="w-10 h-10 bg-slate-100 rounded-xl flex items-center justify-center"
@@ -239,7 +241,7 @@ function Sidebar({ collapsed, onToggle, currentPage, onPageChange }) {
 
                 {!collapsed && item.submenu && (
                   <ChevronDown
-                    className={`w-4 h-4 text-slate-500 transition-transform ${
+                    className={`hidden sm:block w-4 h-4 text-slate-500 transition-transform ${
                       isExpanded ? "rotate-180" : ""
                     }`}
                   />

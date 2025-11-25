@@ -65,4 +65,3 @@ const StaticGrid = () => {
 };
 
 export default StaticGrid;
-
